@@ -94,22 +94,6 @@ Each time we merge we create a new commit.
     {
         title: "Git Cycle",
         content: `
-#Git Cycle
-
-Make some changes
-
---> \`git status\` to check changes
-
---> \`git add\` to **stage** changes
-
---> \`git commit\` to **commit** changes
-
---> Do it again
-        `
-    },
-    {
-        title: "Git Cycle",
-        content: `
 #Demo time
         `
     },
