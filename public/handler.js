@@ -52,11 +52,11 @@ Everything happens invisibly: git changes the files in the directory so that it 
 
 Git allows the author to indicate what changes they want to remember.
 
-Changes which the author has told git about are said to be *staged*
+Changes which the author has told git about are said to be **staged**
 
-When the author tells git to remember, git takes the *staged* changes and *commits* them.
+When the author tells git to remember, git takes the **staged** changes and **commits** them.
 
-Each set of changes stored together is called a commit.
+Each set of changes stored together is called a **commit**.
         `
     },
     {
@@ -64,7 +64,33 @@ Each set of changes stored together is called a commit.
         content: `
 #Git Cycle
 
-Make some changes --> \`git status\` --> \`git add\` changes --> \`git commit`\ --> Do it again
+Make some changes
+
+--> \`git status\` to check changes
+
+--> \`git add\` to **stage** changes
+
+--> \`git commit\` to **commit** changes
+
+--> Do it again
+        `
+    },
+    {
+        title: "Git Cycle",
+        content: `
+#Demo time
+        `
+    },
+    {
+        title: "Git Cycle",
+        content: `
+#Your turn
+
+Download the code from:
+
+<https://github.com/teletypist/fred-teaches-git-at-foundry>
+
+Access slides at <https://git.fredrainbird.com>
         `
     },
 ]
