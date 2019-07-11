@@ -4,7 +4,7 @@ const converter = new showdown.Converter();
 const slides = [
     {
         title: "Git Intro",
-        content: `#Introduction to Git
+        content: `#Intro to Git
         `
     },
     {
