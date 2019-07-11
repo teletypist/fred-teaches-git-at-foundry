@@ -1,0 +1,56 @@
+<html>
+<head>
+<title>Learning Git - Cloning and Committing</title>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.0/showdown.min.js"></script>
+<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+<style>
+
+body, html {
+    box-sizing: border-box;
+    font-size: 1.4em;
+}
+
+pre, code {
+    color: #234e52;
+    background: #edf2f7;
+    padding: 0.5rem 1rem;
+    font-family: Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+}
+
+#app p, h1, h2, h3, h4 {
+    margin: 0.75rem 0;
+}
+
+li {
+    margin-left: 2rem;
+    font-size: 1rem;
+    margin: 0.25rem 0;
+}
+
+h1 {font-size: 4rem;font-weight: bold;}
+h2 {font-size: 2.5rem;font-weight: bold;}
+h3 {font-size: 1.75rem;}
+h4 {font-size: 1rem;}
+
+p, li {
+    color: #4fd1c5;
+}
+
+</style>
+</head>
+<body>
+<div class="fixed inset-0 bg-gray-800 flex justify-center items-center" id="app">
+    <div class="w-4/5 text-gray-100 flex flex-col items-stretch" style="height: 80%">
+        <div v-html="slide" class="flex-1 max-w-xl"></div>
+        <div class="text-sm flex items-baseline mb-6 text-teal-500">
+            <div class="flex-1"></div>
+            <a v-if="current > 0" v-on:click="prev" class="text-xs mx-2 uppercase">prev</a>
+            <span class="text-center font-bold">{{ current + 1 }}. {{ slides[current].title }}</span>
+            <a v-if="current < slides.length-1" v-on:click="next" class="text-xs mx-2 uppercase">next</a>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="handler.js"></script>
+</body>
+</html>
