@@ -48,17 +48,26 @@ On branch master
 We are going to create a new branch. The simplest way to create a branch is with `git checkout` command. Let's create a new branch called `my-changes`.
 
 ```
+git checkout -b my-changes
+```
+
+Adding `-b` tells git that we want to create a new branch and to **checkout** (move onto) that branch straightaway.
+
+Let's now check which branch we are on with `git status`. Paste the response below and see if you can see that the branch has changed.
+
+```
 [Replace this text with your terminal output]
 ```
 
 You should have a line something like:
 
 ```
-modified:   1-cloning-and-committing/poem.txt
+Switched to a new branch 'my-changes'
 ```
-Git shows changes you've made but have not asked to be committed in red.
 
-To save those changes, first we have to let git know we are intend to commit a change. We can do this by adding the file to the next commit with `git add <filename>`. You can copy the filename from the `git status` output.
+Git shows which branch you are on. It's good to keep an eye on branch changes because life can get very ugly if you make and commit changes on `master` if you're supposed to be somewhere else.
+
+Now make some changes to the last two lines of the `poem2.txt` file. Don't make any other changes to the file though.
 
 ```
 git add 1-cloning-and-committing/poem.txt
