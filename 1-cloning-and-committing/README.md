@@ -3,7 +3,7 @@
 
 ## Purpose
 
-The purpose of this activity is to get used to way that changes to code are 'saved' by git.
+The purpose of this activity is to get used to way that changes to code are 'saved' by git. Saving changes in git occurs in blocks and each block of changes is called a *commit* and the act of storing those changes is called *committing**.
 
 ### Steps
 
@@ -41,9 +41,18 @@ You should have a line something like:
 ```
 modified:   1-cloning-and-committing/poem.txt
 ```
+Git shows changes you've made but have not asked to committed in red.
 
 To save those changes, first we have to let git know we are interested in the change. We can do this by adding the file with `git add <filename>`. You can copy the filename from the `git status` output.
 
 ```
 git add 1-cloning-and-committing/poem.txt
 ```
+
+If you run `git status` again the output should've changed. Include the new `git status` output below:
+
+```
+[Replace this text with your terminal output from git status]
+```
+
+Git shows changes that you've added in green to show that it will remember them when you commit.
