@@ -59,6 +59,14 @@ When the author tells git to remember, git takes the *staged* changes and *commi
 Each set of changes stored together is called a commit.
         `
     },
+    {
+        title: "Git Cycle",
+        content: `
+#Git Cycle
+
+Make some changes --> \`git status\` --> \`git add\` changes --> \`git commit`\ --> Do it again
+        `
+    },
 ]
 
 var app = new Vue({
