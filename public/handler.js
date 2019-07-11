@@ -4,6 +4,11 @@ const converter = new showdown.Converter();
 const slides = [
     {
         title: "Git Intro",
+        content: `#Introduction to Git
+        `
+    },
+    {
+        title: "Git Intro",
         content: `#What is Git
 
 Git is a source control management tool.
