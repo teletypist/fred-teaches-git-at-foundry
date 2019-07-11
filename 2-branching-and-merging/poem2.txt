@@ -3,5 +3,5 @@ I wrote this poem for my dog
 
 roses are red
 violets are blue
-create a new branch for breaking changes
-or people will be upset when things break
+i would never introduce Changes
+not worse than anyone else
