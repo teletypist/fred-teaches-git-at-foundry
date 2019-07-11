@@ -31,7 +31,7 @@ Git lets authors work on the same code logically and independently, remembering 
         `
     },
     {
-        title: "Git Cycle",
+        title: "Git Intro",
         content: `
 #How does git work
 
@@ -43,6 +43,20 @@ Git can restore the project from any point in history.
 
 Everything happens invisibly: git changes the files in the directory so that it matches the original exactly.
 
+        `
+    },
+    {
+        title: "Git Cycle",
+        content: `
+#Git Cycle
+
+Git allows the author to indicate what changes they want to remember.
+
+Changes which the author has told git about are said to be *staged*
+
+When the author tells git to remember, git takes the *staged* changes and *commits* them.
+
+Each set of changes stored together is called a commit.
         `
     },
 ]
