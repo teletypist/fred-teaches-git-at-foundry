@@ -6,10 +6,6 @@
 <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
 <style>
 
-body, html {
-    box-sizing: border-box;
-    font-size: 1.4em;
-}
 
 pre, code {
     color: #234e52;
@@ -38,31 +34,22 @@ p, li {
     color: #4fd1c5;
 }
 
-a {
-    color: #b2f5ea;
-    text-decoration: underline;
-}
 
 </style>
 </head>
 <body>
-<div class="fixed inset-0 bg-gray-800 flex justify-center items-center" id="app">
-    <div class="w-4/5 text-gray-100 flex flex-col items-stretch" style="height: 80%">
+<div class="fixed inset-0 flex justify-center items-center" id="app">
+    <div class="w-4/5 flex flex-col items-stretch" style="height: 80%">
         <div class="flex-1 max-w-xl">
-            <h1>Fred Explains Git</h1>
-            <h3>Lesson 1</h3>
-            <ul>
-                <li><a href="/lesson-1">Slides</a></li>
-            </ul>
-            <h3>Lesson 2</h3>
-            <ul>
-                <li><a href="/lesson-2">Slides</a></li>
-            </ul>
-            <h3>Lesson 3</h3>
-            <ul>
-                <li><a href="/lesson-3">Slides</a></li>
-                <li><a href="/video-3">Video</a></li>
-            </ul>
+            <div class="my-4">
+                <a href="/" class="px-2 py-1 my-4 text-grey-800 text-grey-800">&lt; Go Back</a>
+            </div>
+            <div class="w-full">
+                <video controls>
+                    <source src="https://think-static-resources.s3-ap-southeast-2.amazonaws.com/media/lesson-3-commit-names-and-conflicts.mov"></source>
+                </video>
+            </div>
+            <h4 class="text-gray-800">Lesson 3 - Commit Names and Merge Conflicts</h4>
         </div>
     </div>
 </div>
