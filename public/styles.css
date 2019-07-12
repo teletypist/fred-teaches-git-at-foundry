@@ -1,0 +1,48 @@
+body, html {
+    box-sizing: border-box;
+    font-size: 1.4em;
+}
+
+code {
+    color: #234e52;
+    background: #edf2f7;
+    padding: 0.25rem 0.5rem;
+}
+
+pre {
+    color: #234e52;
+    background: #edf2f7;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-family: Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+}
+
+pre code {
+    color: inherit;
+    font-size: inherit;
+    padding: 0;
+}
+
+#app p, h1, h2, h3, h4 {
+    margin: 0.75rem 0;
+}
+
+li {
+    margin: 0.25rem 0;
+    margin-left: 2rem;
+    font-size: 1rem;
+}
+
+h1 {font-size: 4rem;font-weight: bold;}
+h2 {font-size: 2.5rem;font-weight: bold;}
+h3 {font-size: 1.75rem;}
+h4 {font-size: 1rem;}
+
+p, li {
+    color: #4fd1c5;
+}
+
+a {
+    color: #b2f5ea;
+    text-decoration: underline;
+}
