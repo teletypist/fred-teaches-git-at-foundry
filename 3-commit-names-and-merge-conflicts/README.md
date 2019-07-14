@@ -50,21 +50,20 @@ We are now going to checkout our branch from last lesson `my-changes`.
 git checkout my-changes
 ```
 
-If we try to merge `master` into this branch it won't do anything because the two are currently in sync. You can try this with `git merge master`.
+If we try to merge `master` into this branch it won't do anything because the two are currently in sync. You can try this with `git merge master`. It'll look something like this:
 
 ```
-[Replace this text with your terminal output]
+?>git merge master
+Already up to date.
 ```
 
-You should have a line something like:
+Now make some changes to the poem. For now, just edit the last line. It's currently a haiku so you could come up with a different witty 7 syllable line. Afterward commit the changes.
 
-```
-Switched to a new branch 'my-changes'
-```
+You should now checkout `master`. Similar to last lesson, we want to make changes on master in order that two different realities exist on the different branches, otherwise we won't have anything to merge.
 
-Git shows which branch you are on. It's good to keep an eye on branch changes because life can get very ugly if you make and commit changes on `master` if you're supposed to be somewhere else.
+This time make a change to the last line again of the poem, this time on the `master` branch. Make sure it's different words from your `my-changes`. By making changes on the same we are forcing git to get our intervention since during a merge git has no way of determining either of the two lines should be kept, or which order they should be in if they are both kept.
 
-Now make some changes to the last two lines of the `poem2.txt` file. Don't make any other changes to the file though.
+Let's checkout `my-changes` again and we will attempt to merge `master`. It will with a merge conflict.
 
 ```
 git add 1-cloning-and-committing/poem.txt
