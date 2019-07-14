@@ -105,6 +105,31 @@ Unmerged paths:
 	both modified:   3-commit-names-and-merge-conflicts/poem.txt
 ```
 
-Git will tell us what changes the commit represents. Check `git status` now. It should look like it did at the start.
+If we now `git add` the changes, git will understand that we have merged the file:
+
+```
+?>git status
+On branch my-changes
+All conflicts fixed but you are still merging.
+  (use "git commit" to conclude merge)
+
+Changes to be committed:
+
+	modified:   3-commit-names-and-merge-conflicts/poem.txt
+
+```
+
+All we need to do now is commit the change and the branches will be considered merged. We can check this by checking out `master` and attempting merging back:
+
+```
+?>git merge my-changes
+Updating 4801422..d4e986a
+Fast-forward
+ 3-commit-names-and-merge-conflicts/README.md | 36 +++++++++++++++++++++++++++++-------
+ 3-commit-names-and-merge-conflicts/poem.txt  |  2 +-
+ 2 files changed, 30 insertions(+), 8 deletions(-)
+```
+
+Fast forward indicates that nothing had to happen, only that we moved along the commit history since there is a direct path from `master` with the changes you first introduces, through the conflict and on to the final merge.
 
 ### Yay you did it!
