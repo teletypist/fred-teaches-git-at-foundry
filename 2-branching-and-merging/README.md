@@ -25,7 +25,7 @@ Paste the output from the terminal here:
 [Replace this text with your terminal output]
 ```
 
-Find the file poem2.txt in this folder.
+Find the file poem.txt in this folder.
 
 It currently has a number of lines:
 

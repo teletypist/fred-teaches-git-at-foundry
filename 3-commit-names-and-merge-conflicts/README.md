@@ -1,9 +1,9 @@
 
-# Activity 2 - Branching out
+# Activity 3 - Commit names and merging conflicts
 
 ## Purpose
 
-The purpose of this activity is to get used to way working in multiple dimensions within git. Created an alternate dimension is called **branching** and bringing things back together is called **merging**.
+The purpose of this activity is to get confident with git commit names and resolving conflicts during merges.
 
 ### Steps
 
@@ -25,7 +25,7 @@ Paste the output from the terminal here:
 [Replace this text with your terminal output]
 ```
 
-Find the file poem2.txt in this folder.
+Find the file poem.txt in this folder.
 
 It currently has a number of lines:
 
@@ -33,10 +33,9 @@ It currently has a number of lines:
 
 I wrote this poem for my companion
 
-roses are red
-violets are blue
-create a new branch for breaking changes
-or people will be upset when things break
+roses are red and
+violets are blue so
+everything appears to work
 ```
 
 Before we modify anything, we are going to check which branch we are on. We can get this information from our `git status` command. It should read that we are on branch `master`:
@@ -45,15 +44,13 @@ Before we modify anything, we are going to check which branch we are on. We can 
 On branch master
 ```
 
-We are going to create a new branch. The simplest way to create a branch is with `git checkout` command. Let's create a new branch called `my-changes`.
+We are now going to checkout our branch from last lesson `my-changes`.
 
 ```
-git checkout -b my-changes
+git checkout my-changes
 ```
 
-Adding `-b` tells git that we want to create a new branch and to **checkout** (move onto) that branch straightaway.
-
-Let's now check which branch we are on with `git status`. Paste the response below and see if you can see that the branch has changed.
+If we try to merge `master` into this branch it won't do anything because the two are currently in sync. You can try this with `git merge master`.
 
 ```
 [Replace this text with your terminal output]
