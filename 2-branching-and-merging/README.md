@@ -67,7 +67,7 @@ Switched to a new branch 'my-changes'
 
 Git shows which branch you are on. It's good to keep an eye on branch changes because life can get very ugly if you make and commit changes on `master` if you're supposed to be somewhere else.
 
-Now make some changes to the last two lines of the `poem2.txt` file. Don't make any other changes to the file though.
+Now make some changes to the last two lines of the `poem.txt` file. Don't make any other changes to the file though.
 
 ```
 git add 1-cloning-and-committing/poem.txt
